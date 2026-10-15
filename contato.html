@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Portal Web</title>
+</head>
+<body>
+    <div>
+        <h2>Menu Geral do Site</h2>
+        <ul>
+            <li><a href="index.html">Página Inicial (Index)</a></li>
+            <li><a href="historia_web.html">História da Web</a></li>
+            <li><a href="http.html">HTTP</a></li>
+            <li><a href="estados.html">Estados</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <p>Voltar para a página anterior: <a href="curriculo.html">Ir para o Currículo</a></p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>Fale Conosco</h1>
+        <p>
+            <strong>Instruções:</strong> Preencha todos os campos obrigatórios abaixo para enviar sua mensagem ou dúvida 
+            referente aos conteúdos estudados no portal. Nossa equipe retornará o contato em breve.
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <form action="#" method="POST">
+            
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="estado">Estado:</label><br>
+                <select id="estado" name="estado">
+                    <option value="" disabled selected>Selecione o seu estado</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="OUTROS">Outros</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Autor: Ana Clara Castellain | Turma: ADS | Data: 15/10/2026 -->
+</body>
+</html>
