@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Protocolo HTTP na Prática</title>
+</head>
+<body>
+
+    <div>
+        <h2>Menu de Navegação</h2>
+        <ul>
+            <li><a href="index.html">Página Inicial (Index)</a></li>
+            <li><a href="historia_web.html">História da Web</a></li>
+            <li><a href="http.html">HTTP</a></li>
+            <li><a href="estados.html">Estados</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1>O Protocolo HTTP (HyperText Transfer Protocol)</h1>
+        <p>
+            O <strong>HTTP</strong> é o protocolo fundamental da World Wide Web. Ele define como as mensagens são formatadas 
+            e transmitidas, permitindo a comunicação padronizada entre os sistemas da web.
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>1. O Papel do HTTP na Comunicação</h2>
+        <p>
+            O papel principal do HTTP é servir como a "linguagem comum" que viabiliza a troca de dados entre navegadores (que atuam na ponta do usuário) 
+            e servidores web (onde os sites e recursos estão hospedados). Sem ele, os computadores não saberiam interpretar as solicitações de páginas.
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>2. Cliente, Servidor, Requisição e Resposta</h2>
+        <ul>
+            <li><strong>Cliente:</strong> É o aplicativo ou dispositivo do usuário (como o Google Chrome, Firefox ou um script) que inicia a comunicação solicitando um recurso.</li>
+            <li><strong>Servidor:</strong> É o computador de alta capacidade que armazena os arquivos do site e aguarda as chamadas dos clientes para atendê-las.</li>
+            <li><strong>Requisição (Request):</strong> É a mensagem enviada pelo cliente ao servidor pedindo uma informação ou ação.</li>
+            <li><strong>Resposta (Response):</strong> É a mensagem enviada de volta pelo servidor ao cliente, contendo o status da solicitação e os dados solicitados (como o código HTML de uma página).</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>3. Principais Métodos HTTP (GET e POST)</h2>
+        <ul>
+            <li><strong>GET:</strong> Utilizado para <em>solicitar</em> a recuperação de um recurso ou página do servidor (os dados vão visíveis na URL).</li>
+            <li><strong>POST:</strong> Utilizado para <em>enviar</em> dados novos ao servidor (como o preenchimento de um formulário de cadastro ou contato), mantendo o corpo da mensagem oculto na URL.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>4. Exemplo de uma Requisição HTTP</h2>
+        <p>Abaixo temos um exemplo clássico de requisição de texto enviada por um cliente:</p>
+        <pre>
+GET /index.html HTTP/1.1
+Host: www.exemplo.com.br
+User-Agent: Mozilla/5.0
+Accept: text/html
+        </pre>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>5. Exemplo de uma Resposta HTTP</h2>
+        <p>Abaixo temos o exemplo correspondente da resposta enviada pelo servidor:</p>
+        <pre>
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1383
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Página Exemplo&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;&lt;h1&gt;Olá, Mundo!&lt;/h1&gt;&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>6. Códigos de Status HTTP</h2>
+        <p>Os códigos de status informam o resultado da requisição feita pelo cliente. Abaixo estão os principais:</p>
+        <ul>
+            <li><strong>200 OK:</strong> A requisição foi bem-sucedida e o servidor retornou o recurso solicitado.</li>
+            <li><strong>301 Moved Permanently:</strong> O recurso foi movido permanentemente para uma nova URL (redirecionamento).</li>
+            <li><strong>400 Bad Request:</strong> A requisição está mal formatada ou contém sintaxe inválida que o servidor não conseguiu processar.</li>
+            <li><strong>403 Forbidden:</strong> O servidor entendeu o pedido, mas se recusa a autorizá-lo (falta de permissão de acesso).</li>
+            <li><strong>404 Not Found:</strong> O recurso solicitado não foi encontrado no servidor (página inexistente).</li>
+            <li><strong>500 Internal Server Error:</strong> Erro genérico no servidor, indicando que ocorreu uma falha inesperada no processamento interno.</li>
+        </ul>
+    </div>
+
+    <!-- Autor: Ana Clara Castellain | Turma: ADS | Data: 15/10/2026 -->
+</body>
+</html>
